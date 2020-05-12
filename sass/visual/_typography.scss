@@ -1,0 +1,116 @@
+/* ---------------------------------------- */
+/* -------------- TYPOGRAPHY -------------- */
+
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: $header-font;
+}
+
+h3,
+h4,
+h5 {
+  font-family: $header-font-II;
+  color: $tertiary-hdln-color;
+}
+
+h1 {
+  font-size: $primary-hdln-size;
+  line-height: $primary-hdln-line-height;
+  font-weight: $primary-hdln-font-weight;
+  color: $primary-hdln-color;
+}
+
+h2 {
+  font-size: $secondary-hdln-size;
+  line-height: $secondary-hdln-line-height;
+  font-weight: $secondary-hdln-font-weight;
+  color: $secondary-hdln-color;
+  border-bottom: $border-header;
+  text-transform: lowercase;
+}
+
+h3 {
+  font-size: $tertiary-hdln-size;
+  line-height: $tertiary-hdln-line-height;
+  font-weight: $tertiary-hdln-font-weight;
+}
+
+h4 {
+  font-size: $quaternary-hdln-size;
+  line-height: $quaternary-hdln-line-height;
+  font-weight: $quaternary-hdln-font-weight;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  text-decoration: none;
+}
+
+h2 a,
+h3 a,
+h4 a {
+  color: $secondary-hdln-color;
+}
+
+p,
+li {
+  font-family: $body-font;
+  font-weight: $copy-font-weight;
+  font-size: $copy-size;
+  line-height: $copy-size-line-height;
+  color: $brown;
+}
+
+a {
+  color: $link-color;
+  font-weight: $link-font-weight;
+}
+
+a:focus {
+  outline: $border-link;
+}
+
+// ----------------- CLASSES --------------------
+
+.about-me-intro {
+  font-size: $about-me-intro-size;
+  line-height: $about-me-intro-line-height;
+}
+
+.logo-title {
+  font-size: $logo-title-size;
+  line-height: $logo-title-line-height;
+  text-transform: uppercase;
+}
+
+.contact-home-icon-name {
+  font-family: $home-contact-titles;
+  line-height: $home-contact-line-height;
+  color: $contact-name-color;
+}
+
+.project-intro-text {
+  font-size: $project-intro-size;
+  line-height: $project-intro-line-height;
+}
+
+.button {
+  font-family: $button-font;
+  font-size: $button-font-size;
+  color: $button-font-color;
+  text-transform: uppercase;
+}

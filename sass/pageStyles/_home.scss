@@ -1,0 +1,78 @@
+/* ---------------------------------------- */
+/* -------------- PAGE STYLES ------------- */
+
+/* ------------- HOME PAGE ---------------- */
+
+.logo-name {
+  margin-bottom: -20px;
+}
+
+.logo-title {
+  padding-top: 10px;
+  margin: 6px auto 40px auto;
+  border-top: $border-logo;
+  width: 80%;
+}
+
+.image-and-about-container {
+  height: auto;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: $border-image-about;
+}
+
+.profile-image {
+  margin: 0 30px 0 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  align-self: center;
+}
+
+.about-me-intro {
+  margin-bottom: 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  padding: 10px;
+  margin: 10px 0;
+  border: $border-contact-box;
+}
+
+.contact a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+@media (min-width: $media-screen-med) {
+  .about-me-intro {
+    margin-top: 0;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .contact {
+    padding: 10px 40px;
+  }
+  .image-and-about-container {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+  .profile-image {
+    max-width: 250px;
+  }
+}

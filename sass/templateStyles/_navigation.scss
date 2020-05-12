@@ -1,0 +1,121 @@
+/* -------------- NAVIGATION -------------- */
+
+/* Nav Container */
+.main-navigation-container {
+  margin: 0 auto;
+  border-top: $border-nav;
+  border-bottom: $border-nav;
+}
+
+/* High level menu items */
+.main-list-navigation {
+  display: inline-block;
+}
+
+/* High level menu items on hover and active */
+.main-list-navigation:hover,
+.main-list-navigation:active {
+  background: $nav-bg-color;
+}
+
+/* High level links */
+.main-list-navigation a {
+  display: block;
+  text-decoration: none;
+  color: $font-nav-color;
+  padding: 10px 16px;
+  width: 100%;
+}
+
+/* High level links on hover and active */
+.main-list-navigation a:hover,
+.main-list-navigation a:active {
+  color: $font-nav-hover-color;
+}
+
+/* Hamburger menu: Hides nav when not toggled */
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0 auto;
+}
+
+/* Hamburger menu: Hides nav links when not toggled */
+.main-navigation ul ul a {
+  display: none;
+}
+
+/* Hamburger menu: Toggles nav to display high level nav items on small screen */
+.menu-toggle,
+.main-navigation.toggled ul {
+  font-family: $button-font;
+  font-size: $button-font-size;
+  text-align: center;
+  color: $font-nav-color;
+  background: $nav-sub-bg-color;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+  border: none;
+  /* Removes dropdown items from displaying at a smaller screen */
+  .sub-menu {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: $media-screen-med) {
+  /* Keeps nav items from getting too close to screen edge */
+  .navigation {
+    padding: 0 10%;
+  }
+  /* Hamburger menu: Hides hamburger nav at wider screen width */
+  .menu-toggle,
+  .main-navigation.toggled ul {
+    display: none;
+  }
+  /* Displays nav bar at wider screen width */
+  .main-navigation ul {
+    display: block;
+  }
+  /* Dropdown menu */
+  .main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999;
+  }
+  /* Dropdown menu links */
+  .main-navigation ul ul a {
+    display: block;
+    color: $font-nav-sub-color;
+    background: $nav-bg-color;
+    width: 250px;
+  }
+  /* Makes dropdown menu drop */
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto;
+  }
+  /* Makes dropdown menu items drop */
+  .main-navigation li:hover {
+    position: relative;
+  }
+  /* Keeps high level menu hovered when navigating dropdown */
+  .main-navigation ul li:hover a {
+    color: $font-nav-hover-color;
+  }
+  /* Dropdown menu links on hover */
+  .main-navigation ul ul a:hover,
+  .main-navigation ul ul a:active {
+    color: $font-nav-sub-hover-color;
+    background: $nav-sub-bg-color;
+  }
+}
+

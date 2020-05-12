@@ -1,0 +1,125 @@
+// -------------------------------------
+//           VARIABLES PARTIAL
+// -------------------------------------
+
+
+// ---------------- FONTS --------------
+
+$font-stack-serif      : 'Halant', serif;
+$font-stack-cursive    : 'Sacramento', cursive;
+$font-stack-sans-serif : 'Noto Sans KR', sans-serif;
+
+$font-weight-regular : 500;
+$font-weight-bold    : 700;
+
+$body-font           : $font-stack-serif;
+$header-font         : $font-stack-cursive;
+$header-font-II      : $font-stack-serif;
+$button-font         : $font-stack-sans-serif;
+$home-contact-titles : $font-stack-cursive;
+
+$primary-hdln-font-weight    : $font-weight-regular;
+$secondary-hdln-font-weight  : $font-weight-regular;
+$tertiary-hdln-font-weight   : $font-weight-bold;
+$quaternary-hdln-font-weight : $font-weight-regular;
+$copy-font-weight            : $font-weight-regular;
+$link-font-weight            : $font-weight-regular;
+
+$primary-hdln-size    : 4rem;
+$secondary-hdln-size  : 3rem;
+$tertiary-hdln-size   : 1.4rem;
+$quaternary-hdln-size : 1.3rem;
+$copy-size            : 1.3rem;
+$date-size            : 1rem;
+$copyright-size       : .9rem;
+$button-font-size     : .9rem;
+$logo-title-size      : 1.1rem;
+$description-size     : 1rem;
+$project-intro-size   : 1.5rem;
+$about-me-intro-size  : 1.4rem;
+
+$primary-hdln-line-height    : 4rem;
+$secondary-hdln-line-height  : 3rem;
+$tertiary-hdln-line-height   : 2rem;
+$quaternary-hdln-line-height : 1.8rem;
+$copy-size-line-height       : 2rem;
+$date-size-line-height       : 1.2rem;
+$contact-line-height         : 0;
+$copyright-line-height       : 1rem;
+$logo-title-line-height      : 1.4rem;
+$description-line-height     : 1.4rem;
+$project-intro-line-height   : 2.2rem;
+$about-me-intro-line-height  : 2rem;
+$home-contact-line-height    : 0;
+
+
+// ------------- BREAKPOINTS -----------
+
+$media-screen-med : 768px;
+$media-screen-lg  : 1024px;
+$media-screen-xlg : 1200px;
+
+
+// --------------- COLORS --------------
+
+$thistle      : #CFECCE;
+$evergreen    : #77BDB5;
+$rosy-pink    : #AA84A9;
+$aster-purple : #6A5D93;
+$sunset-blue  : #0F6489;
+$brown        : #29291F;
+$white        : #FFF;
+
+$primary-hdln-color        : $aster-purple;
+$secondary-hdln-color      : $sunset-blue;
+$tertiary-hdln-color       : $sunset-blue;
+$font-color                : $brown;
+$font-nav-color            : $evergreen;
+$font-nav-sub-color        : $white;
+$font-nav-hover-color      : $white;
+$font-nav-sub-hover-color  : $evergreen;
+$contact-name-color        : $rosy-pink;
+$button-text-color         : $white;
+$button-text-chosen-color  : $rosy-pink;
+$project-into-para-color   : $sunset-blue;
+$footer-text-color         : $sunset-blue;
+
+$link-color                : $aster-purple;
+$focus-color               : $sunset-blue;
+
+$header-bg-color           : $white;
+$nav-bg-color              : $evergreen;
+$nav-sub-bg-color          : $white;
+$contact-bg-color          : $thistle;
+$button-font-color         : $white;
+$button-color              : $rosy-pink;
+$button-gradient-top       : $rosy-pink;
+$button-gradient-bottom    : $aster-purple;
+$card-color                : $thistle;
+
+
+// --------------- BORDERS --------------
+
+$border-nav           : 1px solid $evergreen;
+$border-header        : 1px solid $sunset-blue;
+$border-logo          : 1px solid $brown;
+$border-link          : 2px solid $sunset-blue;
+$border-image         : 1px solid $thistle;
+$border-image-about   : 1px solid $evergreen;
+$border-project-intro : 1px solid $evergreen;
+$border-footer        : 1px solid $evergreen;
+$border-contact-box   : 1px solid $rosy-pink;
+$border-button        : 2px solid transparent;
+$border-button-focus  : 2px solid $focus-color;
+
+
+// --------------- SVG FILLS --------------
+
+$contact-svg-color         : $thistle;
+$contact-circle-color      : $evergreen;
+$contact-svg-hover-color   : $white;
+$contact-svg-active-color  : $white;
+
+$footer-svg-color          : $white;
+$footer-svg-bg-color       : $aster-purple;
+$footer-svg-hover-color    : $aster-purple;

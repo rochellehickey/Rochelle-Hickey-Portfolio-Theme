@@ -1,0 +1,22 @@
+/* ---------------- BUTTONS --------------- */
+
+.button {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin: 8px 0;
+  text-align: center;
+  border: none;
+  width: 100%;
+  background: $button-color;
+  border: $border-button;
+}
+
+.button:hover,
+.button:active {
+  background: linear-gradient(180deg, $button-gradient-top 15%, $button-gradient-bottom 100%);
+}
+
+.button:focus {
+  outline: $border-button-focus;
+}
